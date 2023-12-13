@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.795),rgba(0, 0, 0, 0.63) ),url(https://cbm.edu.np/wp-content/uploads/1930-by-1080.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#img{
+    height: 1920px;
+    width: 1080px;
+}
+
+header {
+    /* background-color: #f1f1f1; */
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 60px;    
+    
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    /* background-color: #fff; */
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#message{
+    height: 20px;
+}
+
+  header nav ul li a:hover{
+    box-shadow: 2px 1px 0 0 #54b3d6;
+    color: red;
+    font-size: 16px;
+    transition: 0.4s ease-in-out;    
+  }
+#line2{
+    height: 2px;
+    width: 100%;
+    background-color: #54b3d6;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#about,#home,#projects,#contact,.project-card,.project-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+.view{
+    background: none;
+    border: none;
+    color: white;
+}
+#name,
+#email,
+#message,
+#send{
+    background: none;
+    border-radius: 4px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+#name,
+#email,
+#message{
+    width: 160px;
+}
+#send{
+    width: 60px;
+}
+.sub-title{
+    font-size: 16px;
+    color: white;
+}
+header nav #logo{
+    height: 50px;
+    width: 50px;
+}
+#cbm{
+    height: 60px;
+    width: 60px;
+    margin-left: 70px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 40rem; */
+}
