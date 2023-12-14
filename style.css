@@ -13,22 +13,20 @@ body {
     background-attachment: fixed;
 }
 #img{
-    height: 1920px;
-    width: 1080px;
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;    
 }
 
 header {
-    /* background-color: #f1f1f1; */
     padding: 20px;
     text-align: center;
     font-size: 18px;
-    
 }
 
 header nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 header nav ul li {
@@ -76,13 +74,14 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     color: white;
 }
 .view{
     background: none;
     border: none;
     color: white;
+    cursor: progress;
 }
 #name,
 #email,
@@ -99,7 +98,7 @@ section {
 #name,
 #email,
 #message{
-    width: 160px;
+    width: 180px;
 }
 #send{
     width: 60px;
@@ -122,5 +121,20 @@ nav{
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    /* gap: 40rem; */
+    position: fixed;
+    width: 100%;
+}
+#home h1:hover{
+    color: black;
+    transition: 0.8s ease-in-out;
+    cursor: all-scroll;
+    font-size: xx-large;
+}
+#projects h1{
+    padding: 40px;
+}
+#foot{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
 }
