@@ -13,10 +13,10 @@
                     <img  id="cbm" src="cbmLogo.png" alt="logo">
                 </div>
                 <ul class="top">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="direct" href="#home" onclick="navigateToPage('index.html')">Home</a></li>
+                    <li><a class="direct" href="#about" onclick="navigateToPage('faq.html')">About</a></li>
+                    <li><a class="direct" href="#projects" onclick="navigateToPage('project.html')">Projects</a></li>
+                    <li><a class="direct" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -72,18 +72,22 @@
                     <br>
                     <br>
                     <input type="email" id="email" name="email"><br><br>
-                    <label for="message">Message:</label>
                     <br>
                     <br>
-                    <textarea id="message" name="message"></textarea><br><br>
-                    <input type="submit" id="send" value="Send">
+                    <input type="submit" id="btn" value="Send">
                 </form>
+                
             </section>
+            
         </main>
-        <script src="script.js"></script>
+        <div id="book">
+            <a href="#top" title="Back to Top">Books<i class="fa fa-arrow-up"></i></a>
+        </div>        
+
         <footer id="foot">
             © 2023 | Designed by Marshal<br>    
         </footer>
+        <script src="script.js"></script>
     </body>
 
     </html>

@@ -9,7 +9,7 @@ body{
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    /* height: 100vh; */
+    height: 100vh;
     padding-top: 40px;
     gap: 28px;
 }
@@ -104,7 +104,6 @@ body{
 .show-text{
     display: flex;
     flex-direction: column;
-    /* background-color: rgb(235, 216, 191); */
     border-radius: 10px;
     height: max-content;
     padding: 5px;
@@ -120,4 +119,4 @@ body{
 .q{
     text-shadow: 2px 2px 5px rgb(189, 10, 10);
     color: black;
-}
+} 

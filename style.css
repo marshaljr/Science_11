@@ -11,13 +11,14 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: grid;
 }
-#img{
+/* #img{
     height: 200px;
     width: 200px;
     border: none;
     border-radius: 20px;    
-}
+} */
 
 header {
     padding: 20px;
@@ -52,11 +53,7 @@ section {
     padding: 20px;
     margin-bottom: 50px;
 }
-#message{
-    height: 20px;
-}
-
-  header nav ul li a:hover{
+header nav ul li a:hover{
     box-shadow: 2px 1px 0 0 #54b3d6;
     color: red;
     font-size: 16px;
@@ -69,7 +66,7 @@ section {
     margin-left: 200px;
     margin-right: 200px;
 }
-#about,#home,#projects,#contact,.project-card,.project-card{
+#about,#home,#contact,#projects,.project-card,.project-card{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,16 +74,15 @@ section {
     gap: 8px;
     color: white;
 }
-.view{
+/* .view{
     background: none;
     border: none;
     color: white;
     cursor: progress;
-}
+} */
 #name,
 #email,
-#message,
-#send{
+#btn{
     background: none;
     border-radius: 4px;    
     display: flex;
@@ -96,17 +92,28 @@ section {
     color: white;
 }
 #name,
-#email,
-#message{
+#email{
     width: 180px;
 }
-#send{
-    width: 60px;
+#email:hover{
+    transition: .8s;
+    background-color: black;
+    color: white;
+
 }
-.sub-title{
-    font-size: 16px;
+#name:hover{
+    transition: .8s;
+    background-color: black;
     color: white;
 }
+
+#btn{
+    width: 60px;
+}
+/* .sub-title{
+    font-size: 16px;
+    color: white;
+} */
 header nav #logo{
     height: 50px;
     width: 50px;
@@ -115,6 +122,7 @@ header nav #logo{
     height: 60px;
     width: 60px;
     margin-left: 70px;
+    margin-top: 10px;
 }
 nav{
     display: flex;
@@ -128,13 +136,38 @@ nav{
     color: black;
     transition: 0.8s ease-in-out;
     cursor: all-scroll;
-    font-size: xx-large;
+    font-size: x-large;
 }
-#projects h1{
+/* #projects h1{
     padding: 40px;
-}
+} */
 #foot{
     text-align: center;
     color: white;
     margin-bottom: 10px;
+}
+#btn:hover{
+    background-color: #54b3d6;
+    color: black;
+    transition: .6s;
+    border: none;
+}
+#book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-self: end;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.712);
+    letter-spacing: 1px;
+    width: 100%;
+    border-radius: 20px 20px 30px 80px;
+    margin: 0 40px 20px 40px;
+    margin-left: 20px;
+}
+#cbm:hover{
+    transform: scale(1.1);
+    cursor: cell;
+    transition: .8s;
 }

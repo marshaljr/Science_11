@@ -1,0 +1,27 @@
+#projects,.project-card,.project-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    color: white;
+}
+.view{
+    background: none;
+    border: none;
+    color: white;
+    cursor: progress;
+}
+.sub-title{
+    font-size: 16px;
+    color: white;
+}
+#img{
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;    
+}
+#projects h1{
+    padding: 40px;
+}
