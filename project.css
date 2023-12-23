@@ -1,27 +1,98 @@
-#projects,.project-card,.project-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
-    color: white;
+header {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
 }
-.view{
-    background: none;
-    border: none;
-    color: white;
-    cursor: progress;
+
+header nav ul {
+  list-style: none;
 }
-.sub-title{
-    font-size: 16px;
-    color: white;
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 60px;
 }
-#img{
-    height: 200px;
-    width: 200px;
-    border: none;
-    border-radius: 20px;    
+
+header nav a {
+  color: white;
+  text-decoration: none;
 }
-#projects h1{
-    padding: 40px;
+header nav ul li a:hover {
+  /* box-shadow: 2px 1px 0 0 #54b3d6; */
+  color: red;
+  font-size: 16px;
+  transition: 0.4s ease-in-out;
+}
+#cbm:hover {
+  transform: scale(1.1);
+  cursor: cell;
+  transition: 0.8s;
+}
+#btn {
+  width: 60px;
+}
+
+header nav #logo {
+  height: 50px;
+  width: 50px;
+}
+#cbm {
+  height: 60px;
+  width: 60px;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+#home h1:hover {
+  color: black;
+  transition: 0.8s ease-in-out;
+  cursor: all-scroll;
+  font-size: x-large;
+}
+#projects,
+.project-card,
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  color: white;
+}
+.view {
+  background: none;
+  border: none;
+  color: white;
+  cursor: progress;
+}
+.sub-title {
+  font-size: 16px;
+  color: white;
+}
+#img {
+  height: 200px;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+}
+#projects h1 {
+  padding: 40px;
+}
+#icon,
+#icon2,
+#icon3,
+#icon4 {
+  color: white;
+}
+header nav ul li i:hover {
+  transform: scale(1.1);
+  cursor: cell;
+  transition: 0.8s;
 }

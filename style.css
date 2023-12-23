@@ -1,78 +1,115 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow: scroll;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.795),rgba(0, 0, 0, 0.63) ),url(https://cbm.edu.np/wp-content/uploads/1930-by-1080.png); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: grid;
-}
-/* #img{
-    height: 200px;
-    width: 200px;
-    border: none;
-    border-radius: 20px;    
+/* * {
+  box-sizing: border-box;
 } */
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: grid;
+}
+
 header {
-    padding: 20px;
-    text-align: center;
-    font-size: 18px;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
 }
 
 header nav ul {
-    list-style: none;
+  list-style: none;
 }
 
 header nav ul li {
-    display: inline-block;
-    margin-right: 60px;    
-    
+  display: inline-block;
+  margin-right: 60px;
 }
 
 header nav a {
-    color: white;
-    text-decoration: none;
+  color: rgba(255, 0, 0, 0.555);
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+header nav ul li a:hover {
+  /* box-shadow: 2px 1px 0 0 #54b3d6; */
+  color: red;
+  font-size: 16px;
+  transition: 0.4s ease-in-out;
+}
+#cbm:hover {
+  transform: scale(1.1);
+  cursor: cell;
+  transition: 0.8s;
+}
+#btn {
+  width: 60px;
+}
+
+header nav #logo {
+  height: 50px;
+  width: 50px;
+}
+#cbm {
+  height: 60px;
+  width: 60px;
+  margin-left: 30px;
+  /* margin-top: 10px; */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  width: 47rem;
+  background-color: rgba(0, 0, 0, 0.671);
+  border-radius: 16px;
+  margin-left: 650px;
+}
+#home h1:hover {
+  color: black;
+  transition: 0.8s ease-in-out;
+  cursor: all-scroll;
+  font-size: x-large;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 section {
-    /* background-color: #fff; */
-    padding: 20px;
-    margin-bottom: 50px;
+  /* background-color: #fff; */
+  padding: 20px;
+  margin-bottom: 50px;
 }
-header nav ul li a:hover{
-    box-shadow: 2px 1px 0 0 #54b3d6;
-    color: red;
-    font-size: 16px;
-    transition: 0.4s ease-in-out;    
-  }
-#line2{
-    height: 2px;
-    width: 100%;
-    background-color: #54b3d6;
-    margin-left: 200px;
-    margin-right: 200px;
+#line2 {
+  height: 1px;
+  width: 100%;
+  background-color: #54b3d6;
+  margin-left: 200px;
+  margin-right: 200px;
+  box-shadow: 1px 1px 1px 0 skyblue;
 }
-#about,#home,#contact,#projects,.project-card,.project-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
-    color: white;
+#about,
+#home,
+#contact {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 8px;
+  color: white;
 }
 /* .view{
     background: none;
@@ -81,93 +118,78 @@ header nav ul li a:hover{
     cursor: progress;
 } */
 #name,
-#email,
-#btn{
-    background: none;
-    border-radius: 4px;    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
+#email {
+  background: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+#btn {
+  letter-spacing: 1px;
+}
+#f {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 2px;
 }
 #name,
-#email{
-    width: 180px;
+#email {
+  width: 180px;
 }
-#email:hover{
-    transition: .8s;
-    background-color: black;
-    color: white;
+#email:hover {
+  transition: 0.8s;
+  background-color: black;
+  color: white;
+  border: none;
+}
+#name:hover {
+  transition: 0.8s;
+  background-color: black;
+  color: white;
+  border: none;
+}
 
-}
-#name:hover{
-    transition: .8s;
-    background-color: black;
-    color: white;
-}
-
-#btn{
-    width: 60px;
-}
-/* .sub-title{
-    font-size: 16px;
-    color: white;
-} */
-header nav #logo{
-    height: 50px;
-    width: 50px;
-}
-#cbm{
-    height: 60px;
-    width: 60px;
-    margin-left: 70px;
-    margin-top: 10px;
-}
-nav{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-}
-#home h1:hover{
-    color: black;
-    transition: 0.8s ease-in-out;
-    cursor: all-scroll;
-    font-size: x-large;
-}
 /* #projects h1{
     padding: 40px;
 } */
-#foot{
-    text-align: center;
-    color: white;
-    margin-bottom: 10px;
+#foot {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
 }
-#btn:hover{
-    background-color: #54b3d6;
-    color: black;
-    transition: .6s;
-    border: none;
+#btn:hover {
+  background-color: #54b3d6;
+  color: black;
+  transition: 0.6s;
+  border: none;
 }
-#book{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    justify-self: end;
-    height: 200px;
-    background-color: rgba(0, 0, 0, 0.712);
-    letter-spacing: 1px;
-    width: 100%;
-    border-radius: 20px 20px 30px 80px;
-    margin: 0 40px 20px 40px;
-    margin-left: 20px;
+#book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /* justify-self: ; */
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.63);
+  letter-spacing: 1px;
+  width: 90%;
+  border-radius: 20px 20px 30px 80px;
+  margin-left: 60px;
 }
-#cbm:hover{
-    transform: scale(1.1);
-    cursor: cell;
-    transition: .8s;
+#icon,
+#icon2,
+#icon3,
+#icon4 {
+  color: white;
+}
+header nav ul li i:hover {
+  transform: scale(1.1);
+  cursor: cell;
+  transition: 0.8s;
 }

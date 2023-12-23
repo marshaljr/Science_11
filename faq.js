@@ -9,3 +9,7 @@ doc.forEach(function (item) {
     });
   }
 });
+
+function navigateToPage(page) {
+  window.location.href = page;
+}

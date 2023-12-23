@@ -9,7 +9,51 @@
       src="https://kit.fontawesome.com/c4c41a2319.js"
       crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body
+    style="
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.699),
+          rgba(0, 0, 0, 0.514)
+        ),
+        url(https://cbm.edu.np/wp-content/uploads/1930-by-1080.png);
+    ">
+    <header id="head">
+      <nav>
+        <div id="logo">
+          <img id="cbm" src="cbmLogo.png" alt="logo" />
+        </div>
+        <ul class="top">
+          <li>
+            <i id="icon" class="fa-solid fa-house"></i>
+            <a
+              class="direct"
+              href="#home"
+              onclick="navigateToPage('index.html')"
+              >Home</a
+            >
+          </li>
+          <li>
+            <i class="fa-regular fa-address-book"></i>
+            <a class="direct" href="#about" onclick="navigateToPage('faq.html')"
+              >About</a
+            >
+          </li>
+          <li>
+            <i id="icon3" class="fa-solid fa-atom"></i>
+            <a
+              class="direct"
+              href="#projects"
+              onclick="navigateToPage('project.html')"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i
+            ><a class="direct" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <section class="questions">
       <div class="title">
         <h2>General Questions</h2>
